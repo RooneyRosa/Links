@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*
+  background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /*
+  /*abaixo estou resumindo o codigo acima, fazendo um agrupamento meio que fazendo um atalho*/
+
+  /*background: color image repeat position/size */
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+#container {
+  width: 360px;
+
+  /* acima esta a altura e a largura da caixa, porem ela não esta aparecendo pq eu não coloquei o tamnaho da borda e nem a cor*/
+  margin: 56px auto 0px auto;
+  padding: 0 24px;
+}
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+#profile img {
+  width: 112px;
+}
+#profile p {
+  font-weight: 500; /*esse 500 se refere ao peso da propriedade*/
+  line-height: 24px; /* aqui se refere a altura da linha*/
+}
+
+/* Links */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center; /* esse alinha no meio da caixa( um espaçamento para o texto ficar no meio da caixa*/
+  align-items: center; /* esse alinha a altura to texto na caixa (como se tivesse uma linha imaginaria no meio, a aula do modulo Discover, modulo 4 video 2 fala disso)*/
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5); /* RGBA siginifica Red Green Blue Alfa, ou seja a coloração mais o nivel de transparencia*/
+  border-radius: 8px; /* Arredondamento de borda*/
+  backdrop-filter: 8px;
+  -webkit-backdrop-filter: blur(
+    4px
+  ); /* o blur deixa o fundo embaçado, e o webkit ele é colocado para o safari conseguir entender ele*/
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+/* pseudo-selector é quando aplica algo quando o mouse passe por cima*/
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
